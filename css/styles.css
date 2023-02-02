@@ -184,6 +184,12 @@ p {
     opacity: 1;
 }
 
+.carosel-inner::after {
+    display: none;
+    clear: none;
+    content: none;
+}
+
 #loginbtn {
     /* width: 401px;
     height: 48px; */
