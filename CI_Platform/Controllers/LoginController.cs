@@ -17,5 +17,9 @@ namespace CI_Platform.Controllers
         {
             return PartialView();
         }
+        public IActionResult Register()
+        {
+            return PartialView();
+        }
     }
 }

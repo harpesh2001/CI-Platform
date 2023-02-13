@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>lost password</title>
+    <title>register</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid main">
+    <div class="container-fluid row main">
         <div class="row vh-100 gx-0">
             <!-- Carousel -->
             <div class="img-slider col-lg-8 gx-0">
@@ -135,42 +135,74 @@
                 </div>
             </div>
 
-            <div class="loginpage col">
-                <div class="spacebetween">
-                    <div class="text-center ">
-                        <img class="mw-100" src="/Assets/logo.png" alt="logo" />
+            <div class="col mt-5 loginpage">
+                <div class="text-center ">
+                    <img class="mw-100" src="/Assets/logo.png" alt="logo" />
+                </div>
+                <div class="">
+                    <div class="mb-3 form-input">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text"
+                               class="form-control"
+                               id="fname"
+                               placeholder="name"
+                               required />
                     </div>
-                    <!-- <div class="row"> -->
-                    <div class="text-center">
-                        <h3 class="text-center">Forgot password</h3>
-                        <p class="text-center">
-                            Enter your email address you've using for your account below and
-                            we will send you a password reset link
-                        </p>
+                    <div class="mb-3 form-input">
+                        <label for="lname" class="form-label">Last Name</label>
+                        <input type="text"
+                               class="form-control"
+                               id="lname"
+                               placeholder="surname"
+                               required />
                     </div>
-                    <br />
-                    <form>
-                        <div class="mb-3 form-input">
-                            <label for="emailId" class="form-label">Email address</label>
-                            <input type="email"
-                                   class="form-control"
-                                   id="emailId"
-                                   placeholder="Enter your email address..." />
-                        </div>
+                    <div class="mb-3 form-input">
+                        <label for="mobno" class="form-label">Phone Number</label>
+                        <input type="tel"
+                               class="form-control"
+                               id="mobno"
+                               placeholder="12345"
+                               required />
+                    </div>
+                    <div class="mb-3 form-input">
+                        <label for="emailId" class="form-label">Email address</label>
+                        <input type="email"
+                               class="form-control"
+                               id="emailId"
+                               placeholder="name@example.com"
+                               required />
+                    </div>
+                    <div class="mb-3 form-input">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password"
+                               class="form-control"
+                               id="password"
+                               placeholder="****"
+                               required />
+                    </div>
+                    <div class="mb-3 form-input">
+                        <label for="password" class="form-label">Confrim Password</label>
+                        <input type="password"
+                               class="form-control"
+                               id="password"
+                               placeholder="****"
+                               required />
+                    </div>
+                    <div class="form-input"> 
+                        <button type="submit" class="login-btn mb-4" asp-controller="Login" asp-action="Register">Register</button>
+                    </div>
 
-                        <div class="mb-3 form-input">
-                            <button type="submit" class="login-btn mb-4" asp-action="ResetPassword" asp-controller="Login"> 
-                                Reset my Password
-                            </button>
-                        </div>
+                    <!-- </form> -->
 
-                        <div class="text-center mb-3">
-                            <a class="lostpass" asp-area="" asp-action="Login" asp-controller="Login">Login</a>
-                        </div>
-                    </form>
+                    <div class="text-center mb-2">
+                        <a class="lostpass" asp-action="ForgotPassword" asp-controller="Login">Lost your Password?</a>
+                    </div>
+                    <div class="text-center mb-2">
+                        <span>Already registered?</span><a style="text-decoration: none" asp-action="Login" asp-controller="Login">Login now</a>
+                    </div>
                 </div>
                 <div class="privacy-policy text-center">
-                    <a class="privacy" asp-area="" asp-action="Privacy" asp-controller="Home">Privacy Policy</a>
+                    <a class="privacy" asp-action="Privacy" asp-controller="Home">Privacy Policy</a>
                 </div>
             </div>
         </div>
