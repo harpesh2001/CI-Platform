@@ -6,7 +6,16 @@ namespace CI_Platform.Controllers
     {
         public IActionResult Login()
         {
-            return View();
+            return PartialView();
+        }
+        
+        public IActionResult ForgotPassword()
+        {
+            return PartialView();
+        }
+        public IActionResult ResetPassword()
+        {
+            return PartialView();
         }
     }
 }
