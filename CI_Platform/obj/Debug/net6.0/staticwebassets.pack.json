@@ -561,6 +561,18 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
     },
     {
+      "Id": "D:\\CI Platform\\CI_Platform\\wwwroot\\css\\landingPage.css",
+      "PackagePath": "staticwebassets\\css\\landingPage.css"
+    },
+    {
+      "Id": "D:\\CI Platform\\CI_Platform\\wwwroot\\css\\missionDetail.css",
+      "PackagePath": "staticwebassets\\css\\missionDetail.css"
+    },
+    {
+      "Id": "D:\\CI Platform\\CI_Platform\\wwwroot\\css\\pagenotfound.css",
+      "PackagePath": "staticwebassets\\css\\pagenotfound.css"
+    },
+    {
       "Id": "D:\\CI Platform\\CI_Platform\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
